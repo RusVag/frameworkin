@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                header{
+            border: 0px solid transparent;
+            border-radius: 30px;
+            position: sticky;
+            top: 0;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        li{
+            list-style: none;
+        }
+
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 20px;
+            background-color: black;
+            color: white;
+            border-radius: 30px;
+        }
+        .menu{
+            display: flex;
+            font-size: 30px;
+        }
+
+        .menu li{
+            padding: 5px 15px;
+        }
+        .menu li a:hover{
+            transition: all 0.3s;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <header id="headerone">
+        <nav class="navbar">
+            <ul class="navlinks">
+                <div class="menu">
+                    <li><a href="http://127.0.0.1:8000/">Главная</a></li>
+                    <li><a href="http://127.0.0.1:8000/news">Новости</a></li>
+                    <li><a href="http://127.0.0.1:8000/management">Руководство</a></li>
+                    <li><a href="http://127.0.0.1:8000/facts">Факты</a></li>
+                    <li><a href="http://127.0.0.1:8000/contacts">Контакты</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+</div>
+    <h1>главная</h1>
+</body>
+</html>

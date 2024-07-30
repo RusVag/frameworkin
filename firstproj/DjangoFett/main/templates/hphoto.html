@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Фото</title>
+    <style>
+                header{
+            border: 0px solid transparent;
+            border-radius: 30px;
+            position: sticky;
+            top: 0;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        li{
+            list-style: none;
+        }
+
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 20px;
+            background-color: black;
+            color: white;
+            border-radius: 30px;
+        }
+        .menu{
+            display: flex;
+            font-size: 30px;
+        }
+
+        .menu li{
+            padding: 5px 15px;
+        }
+        .menu li a:hover{
+            transition: all 0.3s;
+            color: red;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {display: block;
+        background-color: black;}
+
+
+    </style>
+</head>
+
+<body>
+<div>
+    <header id="headerone">
+        <nav class="navbar">
+            <ul class="navlinks">
+                <div class="menu">
+                    <li><a href="http://127.0.0.1:8000/">Главная</a></li>
+                    <li><a href="http://127.0.0.1:8000/news">Новости</a></li>
+                    <li><a href="http://127.0.0.1:8000/management">Руководство</a></li>
+                    <li><a href="http://127.0.0.1:8000/facts">Факты</a></li>
+                    <li><a href="http://127.0.0.1:8000/contacts">Контакты</a></li>
+
+                    <div class="dropdown">
+
+                        <li><a href="http://127.0.0.1:8000/history">История</a></li>
+
+                            <div class="dropdown-content">
+                                <li class="menu"><a href="http://127.0.0.1:8000/history/people">Люди</a></li>
+                                <li class="menu"><a href="http://127.0.0.1:8000/history/photos">Фото</a></li>
+                            </div>
+
+                    </div>
+
+                </div>
+            </ul>
+        </nav>
+    </header>
+</div>
+    <iframe src="https://sterlitamakcity.ru/o-sterlitamake/foto-sterlitamaka.html"  height="700px" width="100%" frameborder="0"></iframe>
+</body>
+</html>
